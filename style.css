@@ -22,28 +22,7 @@ body{
   color:var(--accent);
 
 }
-.phone-shell{
-  width:550px;
-  height:1000px;
-  
-  /* ⭐ 1. REPLACE THE OLD GREY BACKGROUND WITH YOUR IMAGE URL BELOW ⭐ */
-  background-image: url('https://as1.ftcdn.net/jpg/02/06/26/08/1000_F_206260811_oPpBC7feTt2UGzrPYMyt0Z9R8bmUatLF.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 
-  /* Removed the old background color */
-  /* background: rgba(15, 15, 15, 0.55); */
-  
-  backdrop-filter: blur(12px);
-  border-radius:28px;
-  overflow:hidden;
-  display:flex;
-  flex-direction:column;
-  border:1px solid rgba(255,255,255,0.12);
-  box-shadow:0 20px 60px rgba(0,0,0,0.7);
-  position: relative; /* Needed for the overlay */
-}
 
 /* ---- NEW: DARK OVERLAY FOR READABILITY ---- */
 /* This creates a semi-transparent layer over your background image so text is easy to read */
@@ -67,17 +46,6 @@ body{
 }
 
 /* ---- DARK OVERLAY (Makes text readable over the image) ---- */
-.phone-shell::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* 0.7 = Darker, 0.4 = Lighter */
-  z-index: 0;
-  pointer-events: none;
-}
 
 /* ---- ENSURE CONTENT SITS ON TOP OF IMAGE ---- */
 .topbar, .screen, .bottom-nav {
@@ -262,10 +230,7 @@ h1,h2{margin:0 0 6px 0;}
   z-index: 10;
 }
 
-/* responsive small screens */
-@media (max-width:420px){
-  .phone-shell{width:94vw;height:92vh}
-}
+
 
 /* =========================================
    MUNICIPALITIES (PILL LAYOUT)
