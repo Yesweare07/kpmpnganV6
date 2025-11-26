@@ -685,3 +685,11 @@ h1,h2{margin:0 0 6px 0;}
   outline: none;
   border-color: var(--accent);
 }
+
+.login-overlay {
+  display: flex;
+}
+
+.login-overlay ~ .phone-shell .bottom-nav {
+  display: none !important;
+}
