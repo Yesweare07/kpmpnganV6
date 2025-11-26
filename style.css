@@ -33,7 +33,10 @@ body {
   display: flex;
   justify-content: center; /* center app horizontally */
   align-items: flex-start;
-  background: #000;
+  background-image: url('https://media.istockphoto.com/id/1324305804/photo/illumination-at-don-bosco-church-makati-metro-manila-philippines.jpg?s=612x612&w=0&k=20&c=jwhkrsRQmmKL1lCkleJ5admKJFSyf-Of_h5mN1Cgm7o=');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-family: Inter, "Segoe UI", Arial, sans-serif;
   color: var(--accent);
   -webkit-font-smoothing: antialiased;
