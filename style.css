@@ -22,9 +22,17 @@ body{
   color:var(--accent);
 
 }
-.phone-shell{
-  width:480px;
-  height:900px;
+.phone-shell {
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+  max-height: none;
+
+  border-radius: 0;         /* removes curve so it fills screen */
+  border: none;             /* removes border */
+  box-shadow: none;         /* removes shadow */
+}
+
   
   /* ⭐ 1. REPLACE THE OLD GREY BACKGROUND WITH YOUR IMAGE URL BELOW ⭐ */
   background-image: url('https://as1.ftcdn.net/jpg/02/06/26/08/1000_F_206260811_oPpBC7feTt2UGzrPYMyt0Z9R8bmUatLF.jpg');
