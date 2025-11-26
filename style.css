@@ -6,22 +6,24 @@
   --accent:#fff;
 }
 
-body{
-  margin:0;
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  /* Background for the area OUTSIDE the phone */
-  background-image: url(https://www.vacationhive.com/blog/christmas-destinations-in-the-philippines-top-7-spots-to-visit-and-feel-the-holiday-season/');
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #000; /* << ADD THIS */
+  
+  background-image: url('https://media.istockphoto.com/id/1324305804/photo/illumination-at-don-bosco-church-makati-metro-manila-philippines.jpg?s=612x612&w=0&k=20&c=jwhkrsRQmmKL1lCkleJ5admKJFSyf-Of_h5mN1Cgm7o=');  /* optional */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family:Inter, "Segoe UI", Arial, sans-serif;
-  color:var(--accent);
 
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  color: var(--accent);
 }
+
 
 
 /* ---- NEW: DARK OVERLAY FOR READABILITY ---- */
