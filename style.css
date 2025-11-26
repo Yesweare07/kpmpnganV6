@@ -184,11 +184,16 @@ h1,h2{margin:0 0 6px 0;}
 
 /* bottom nav */
 .bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
   display: flex;
   gap: 6px;
   padding: 10px;
 
-  /* ⭐ IMPORTANT — prevents nav from being hidden in PWA */
+  /* Safe-area for PWA (VERY IMPORTANT) */
   padding-bottom: calc(10px + env(safe-area-inset-bottom));
 
   background: #060606;
@@ -196,10 +201,16 @@ h1,h2{margin:0 0 6px 0;}
 
   justify-content: space-around;
 
-  /* ⭐ allows full nav to show even on smaller screens */
+  /* For small screens — allow swipe left/right */
   overflow-x: auto;
   scrollbar-width: none;
+  z-index: 9999;
 }
+
+.bottom-nav::-webkit-scrollbar {
+  display: none;
+}
+
 
 .bottom-nav::-webkit-scrollbar {
   display: none;
