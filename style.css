@@ -628,7 +628,3 @@ h1,h2{margin:0 0 6px 0;}
   outline: none;
   border-color: var(--accent);
 }
-
-.page {
-  padding-bottom: 90px;  /* space for bottom nav */
-}
