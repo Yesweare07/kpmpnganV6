@@ -137,22 +137,26 @@ h1,h2{margin:0 0 6px 0;}
 
 /* bottom nav */
 .bottom-nav {
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  width: 100%;
+  max-width: 480px;   /* keeps nav centered and not stretched */
+  
   display: flex;
-  gap: 6px;
-  padding: 10px;
-
-  /* ⭐ IMPORTANT — prevents nav from being hidden in PWA */
-  padding-bottom: calc(10px + env(safe-area-inset-bottom));
+  justify-content: space-around;
+  align-items: center;
 
   background: #060606;
+  padding: 12px 8px;
   border-top: 1px solid #181818;
 
-  justify-content: space-around;
-
-  /* ⭐ allows full nav to show even on smaller screens */
-  overflow-x: auto;
-  scrollbar-width: none;
+  z-index: 9999;
 }
+
 
 .bottom-nav::-webkit-scrollbar {
   display: none;
