@@ -174,13 +174,26 @@ h1,h2{margin:0 0 6px 0;}
 }
 
 /* bottom nav */
-.bottom-nav{
-  display:flex;
-  gap:6px;
-  padding:10px;
-  background:#060606;
-  border-top:1px solid #181818;
-  justify-content:space-around;
+.bottom-nav {
+  display: flex;
+  gap: 6px;
+  padding: 10px;
+
+  /* ⭐ IMPORTANT — prevents nav from being hidden in PWA */
+  padding-bottom: calc(10px + env(safe-area-inset-bottom));
+
+  background: #060606;
+  border-top: 1px solid #181818;
+
+  justify-content: space-around;
+
+  /* ⭐ allows full nav to show even on smaller screens */
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.bottom-nav::-webkit-scrollbar {
+  display: none;
 }
 .nav-btn{
   background:#0c0c0c;
