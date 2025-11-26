@@ -626,3 +626,9 @@ h1,h2{margin:0 0 6px 0;}
   outline: none;
   border-color: var(--accent);
 }
+
+header, main{
+  width: 100%;
+  max-width: 480px;   /* perfect mobile width */
+  margin: 0 auto;     /* keeps it centered */
+}
