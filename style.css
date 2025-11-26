@@ -632,3 +632,9 @@ h1,h2{margin:0 0 6px 0;}
 .page {
   padding-bottom: 90px;  /* space for bottom nav */
 }
+
+header, main, nav.bottom-nav {
+  width: 100%;
+  max-width: 480px;   /* perfect mobile width */
+  margin: 0 auto;     /* keeps it centered */
+}
