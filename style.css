@@ -6,22 +6,27 @@
   --accent:#fff;
 }
 
-body{
-  margin:0;
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  /* Background for the area OUTSIDE the phone */
+body {
+  margin: 0;
+  padding: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  /* REMOVE FLEX — this is causing the white space */
+  display: block;
+
+  /* Optional, but keeps your background */
   background-image: url(https://www.vacationhive.com/blog/christmas-destinations-in-the-philippines-top-7-spots-to-visit-and-feel-the-holiday-season/');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family:Inter, "Segoe UI", Arial, sans-serif;
-  color:var(--accent);
 
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  color: var(--accent);
 }
+
 .phone-shell {
   width: 100vw;
   height: 100vh;
