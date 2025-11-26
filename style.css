@@ -25,12 +25,21 @@ body{
 .phone-shell {
   width: 100vw;
   height: 100vh;
-  max-width: none;
-  max-height: none;
 
-  border-radius: 0;         /* removes curve so it fills screen */
-  border: none;             /* removes border */
-  box-shadow: none;         /* removes shadow */
+  /* your background image */
+  background-image: url('https://as1.ftcdn.net/jpg/02/06/26/08/1000_F_206260811_oPpBC7feTt2UGzrPYMyt0Z9R8bmUatLF.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
 }
 
   
